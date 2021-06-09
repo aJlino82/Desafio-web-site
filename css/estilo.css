@@ -3,55 +3,58 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #ffffe6;
-    outline: currentcolor none 0px;
+    
 }
+
+html {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
 
 header {
     display: flex;
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-    display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    padding: 0px 50px;
-    font-weight: normal;
+    padding: 30px 10px;
 }
 
-a {
-    text-decoration: none;
-    color: var(--pale-gray)
-}
-
-.navlist {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: row;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-li {
-    font-weight: 200px;
-    font-size: 23px;
-    display: inline;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    padding: 45px 20%;
-}
-
-.devc {
+.logo {
+    cursor: pointer;
+    color: var(--orange-dead);
     font-size: 30px;
     font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    font-size: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 30px 10px;
+}
+
+.nav-links li a {
+    color: var(--dead-gray);
+    text-decoration: none;
+    transition: all 0.2s ease 0s;
+}
+
+.nav-links li a:hover {
     color: var(--orange-dead);
 }
 
+.main {
+    background-image: url(../img/team.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
 :root {
-    --orange-dead: #cc9900;
+    --orange-dead: #D2872C;
+    --dead-gray: #766F68;
     --yellow: #f4cf0a;
     --purple: #5c0d78;
     --white: #FFFFFF;
